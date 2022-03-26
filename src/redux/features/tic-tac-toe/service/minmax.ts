@@ -41,7 +41,7 @@ export const minmax = (player: Player, board: number[][], depth: number, wishedD
         if (value > maxValue) {
             maxValue = value
 
-            if (depth == wishedDepth) {
+            if (depth === wishedDepth) {
                 optimalMove = move
             }
         }

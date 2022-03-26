@@ -57,7 +57,7 @@ export const determineWinner = (board: number[][]) => {
             result_column += board[j][i]
         }
         if (Math.max(Math.abs(result_row), Math.abs(result_diagonal_two), Math.abs(result_diagonal_one), Math.abs(result_column)) === BOARD_SIZE) {
-            if (result_row === BOARD_SIZE || result_column === BOARD_SIZE || result_diagonal_two == BOARD_SIZE || result_diagonal_one == BOARD_SIZE) {
+            if (result_row === BOARD_SIZE || result_column === BOARD_SIZE || result_diagonal_two === BOARD_SIZE || result_diagonal_one === BOARD_SIZE) {
                 return BoardStatus.WHITE_WON
             }
             return BoardStatus.RED_WON
