@@ -1,0 +1,17 @@
+.board-element {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(158, 165, 165);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.white {
+  background-color: white;
+  cursor: not-allowed;
+}
